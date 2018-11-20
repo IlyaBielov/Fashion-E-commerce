@@ -1,0 +1,15 @@
+.header {
+  border-bottom: 6px solid $border-color;
+  padding: 30px 0;
+
+  .header__wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .header__menu {
+    flex-basis: 58%;
+  }
+}
