@@ -115,7 +115,7 @@ gulp.task("serve", function() {
     server: "build"
   });
 
-  gulp.watch("scss/**/*/.scss,"["sass"]);
+  gulp.watch("scss/**/*.scss", ["sass"]);
   gulp.watch("*.html", ["html"]);
   gulp.watch("js/**/*.js", ["js"]);
   gulp.watch("css/**/*.css", ["css"]);
