@@ -5,3 +5,24 @@
   box-sizing: border-box;
   margin: 0 auto;
 }
+
+@mixin btn($bg: $black, $fs: 9px, $lh: 13px, $ls: 0.54px, $br: 40px, $w: 114px, $clr: $white) {
+  width: $w;
+  color: $clr;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+  background-color: $bg;
+  border-radius: $br;
+  padding: 13px 0;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 25px 0;
+  text-decoration: none;
+  @content;
+
+  &:hover {
+    background-color: lighten($bg, 15%);
+  }
+}
