@@ -13,3 +13,29 @@
     flex-basis: 58%;
   }
 }
+
+@media (max-width: 768px) {
+  .header {
+    .header__left {
+      flex-basis: 100%;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    .header__menu {
+      flex-basis: 80%;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    .header__menu {
+      flex-basis: 100%;
+      margin-bottom: 15px;
+    }
+    .header__right {
+      flex-basis: 100%;
+      justify-content: center;
+    }
+  }
+}

@@ -2,8 +2,11 @@
   display: flex;
   align-items: center;
 
-  .icons__cart, .icons__search {
+  .icons__cart {
     margin: 0 12px;
+  }
+  .icons__search {
+    margin-left: 12px;
   }
 
   .icons__search {
