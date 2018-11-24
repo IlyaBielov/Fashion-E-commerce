@@ -1,0 +1,40 @@
+.banner {
+  background: url('../img/banner1.jpg') left center no-repeat #00b7d9;
+  background-size: cover;
+  margin: 25px 0;
+  padding: 45px 0;
+  display: flex;
+  justify-content: flex-end;
+
+  .banner__information {
+    flex-basis: 630px;
+    margin-right: 70px;
+    text-align: center;
+  }
+
+  .banner__title {
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: 600;
+    letter-spacing: 2.6px;
+    text-transform: uppercase;
+  }
+
+  p {
+    color: $offers-color;
+    margin: 15px 0;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 5.6px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  a {
+    $values: (bg: $white, fs: 12px, lh: 20px, ls: 2.16px, br: 60px, w: 250px, clr: $black);
+    @include btn($values...){
+      padding: 20px 0;
+      margin: 35px auto;
+    };
+  }
+}
