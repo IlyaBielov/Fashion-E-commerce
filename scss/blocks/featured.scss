@@ -1,0 +1,69 @@
+.featured {
+  margin: 90px 0;
+
+  .featured__title {
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 2.6px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $offers-color;
+    text-align: center;
+  }
+
+  .featured__block {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .featured__element {
+    flex-basis: 23%;
+
+    img {
+      display: block;
+      max-width: 100%;
+      margin: 0 auto 20px;
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 17px;
+      margin: 7px 0;
+
+      a {
+        font-size: 15px;
+        line-height: 17px;
+        text-decoration: none;
+        color: $black;
+        font-weight: 700;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .feature__brand {
+      color: $brand-color;
+    }
+
+    .featured__price {
+      font-weight: 700;
+
+      span {
+        font-weight: 400;
+        text-decoration: line-through;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .featured__btn {
+    $values: (fs: 12px, lh: 20px, ls: 0.6px, w: 175px, br: 60px, bg: transparent, clr: $black);
+    @include btn($values...){
+      border: 2px solid #d9c8aa;
+      margin: 50px auto;
+      padding: 18px 0;
+    };
+  }
+}
