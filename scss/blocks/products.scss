@@ -47,3 +47,36 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+
+  .products {
+    margin: 25px 0;
+  }
+}
+
+@media (max-width: 640px) {
+
+  .products {
+    .products__block {
+      justify-content: center;
+
+      .products__element {
+        flex-basis: 48%;
+        margin: 5px 1%;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+
+  .products {
+    .products__block {
+      .products__element {
+        flex-basis: 100%;
+        margin: 10px 0;
+      }
+    }
+  }
+}
