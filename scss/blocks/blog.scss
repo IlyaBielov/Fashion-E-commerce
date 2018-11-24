@@ -63,3 +63,32 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+
+  .blog {
+    margin-top: 25px;
+
+    .blog__info {
+      width: calc(100% - 20px);
+    }
+  }
+}
+
+@media (max-width: 580px) {
+
+  .blog {
+    
+    .blog__block {
+      margin-top: 25px;
+    }
+
+    .blog__element {
+      flex-basis: 100%;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
