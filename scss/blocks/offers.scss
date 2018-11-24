@@ -1,0 +1,125 @@
+.offers {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0 25px;
+
+  .offers__left, .offers__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .offers__element {
+    position: relative;
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    .offers__category {
+      font-size: 13px;
+      line-height: 36px;
+      letter-spacing: 0.65px;
+      font-weight: 500;
+      color: $offers_color;
+    }
+
+    .offers__name {
+      font-size: 19px;
+      line-height: 24px;
+      font-weight: 700;
+      letter-spacing: 1.425px;
+      color: $offers_color;
+      text-transform: uppercase;
+    }
+
+    a {
+      @include btn();
+    }
+  }
+
+  .offers__info {
+    position: absolute;
+    z-index: 1;
+    left: 30px;
+
+    p {
+      margin: 10px 0;
+    }
+  }
+
+  .offers__new {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 11px;
+    line-height: 14px;
+    padding: 5px 10px;
+    background-color: $black;
+    color: $white;
+    text-transform: uppercase;
+
+    &::before {
+      content: "";
+      border: 10px solid transparent;
+      border-left: 10px solid $black;
+      position: absolute;
+      left: 0;
+      bottom: -9px;
+    }
+  }
+
+  .offers__center {
+    margin: 0 2.1%;
+    .offers__info {
+      top: 105px;
+    }
+  }
+
+  .offers__left {
+    .offers__info {
+      left: 0;
+      bottom: 15px;
+      width: 100%;
+    }
+
+    .offers__two-get {
+      text-align: center;
+      font-size: 22px;
+      line-height: 25px;
+      text-transform: uppercase;
+      letter-spacing: 1.65px;
+      font-weight: 700;
+      color: $offers_color;
+      margin: 0;
+    }
+  }
+
+  .offers__right {
+
+    .offers__info {
+      top: 50px;
+    }
+  }
+
+  .offers__element--glasses {
+    
+    .offers__info {
+      left: 0;
+      bottom: 10px;
+      width: 100%;
+      top: auto;
+    }
+    
+    .offers__category {
+      text-align: center;
+      color: $offers_color;
+      font-size: 13px;
+      text-transform: uppercase;
+      line-height: 25px;
+      font-weight: 700;
+      letter-spacing: 0.65px;
+    }
+  }
+}
