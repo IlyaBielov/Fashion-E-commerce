@@ -38,3 +38,27 @@
     };
   }
 }
+
+@media (max-width:1156px) {
+  
+  .banner {
+    background-position: -100px 0;
+
+    .banner__information {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: 980px) {
+   
+  .banner {
+    background: #00b7d9;
+
+    .banner__information {
+      flex-basis: 100%;
+      padding: 0 10px;
+      box-sizing: border-box;
+    }
+  }
+}
