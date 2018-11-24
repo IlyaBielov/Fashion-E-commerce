@@ -57,3 +57,27 @@
     }
   }
 }
+
+@media (max-width: 860px) {
+
+  .links {
+    padding-top: 180px;
+
+    .links__element {
+      flex-basis: 33%;
+      margin: 10px 0;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+
+  .links {
+    padding-top: 150px;
+    
+    .links__element {
+      flex-basis: 100%;
+      text-align: center;
+    }
+  }
+}
