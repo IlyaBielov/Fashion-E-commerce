@@ -34,8 +34,27 @@
     $values: (bg: $white, fs: 12px, lh: 20px, ls: 2.16px, br: 60px, w: 250px, clr: $black);
     @include btn($values...){
       padding: 20px 0;
-      margin: 35px auto;
-    };
+      margin: 35px auto 0px;
+    }
+  }
+}
+
+.banner--left {
+  background: url('../img/banner2.jpg') left center no-repeat #d7dbd6;
+  background-size: cover;
+  justify-content: flex-start;
+  
+  .banner__information {
+    margin-right: 0px;
+    margin-right: 70px;
+  }
+
+  a {
+    $values: (bg: $black, fs: 14px, lh: 23px, ls: 0.7px, br: 70px, w: 205px, clr: $white);
+    @include btn($values...){
+      padding: 24px 0;
+      margin: 35px auto 0px;
+    }
   }
 }
 
