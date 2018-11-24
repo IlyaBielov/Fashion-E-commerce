@@ -40,4 +40,17 @@ $('.carousel').owlCarousel({
     }
 });
 
+    const iconsSearch = document.querySelector('.icons__search');
+    const body = document.querySelector('body');
+
+    iconsSearch.addEventListener('click', function (event){
+        event.stopPropagation();
+        this.classList.add('icons__search--active');
+    });
+
+    body.addEventListener('click', function (event){
+        iconsSearch.classList.remove('icons__search--active');
+    });
+
+
 });
