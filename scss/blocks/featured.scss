@@ -66,4 +66,34 @@
       padding: 18px 0;
     };
   }
+  .owl-nav {
+
+    button.owl-prev, button.owl-next {
+      background: url("../img/sprite-arrow2.png") 0 0 no-repeat;
+      width: 49px;
+      height: 49px;
+      border: none;
+      box-shadow: none;
+      position: absolute;
+      left: -55px;
+      top: calc(50% - 49px);
+      cursor: pointer;
+      transform: translateY(-50%);
+      outline: none;
+    }
+    button.owl-prev {
+      &:hover {
+        background-position: 0px -49px;
+      }
+    }
+    button.owl-next {
+      background-position: -49px 0;
+      left: auto;
+      right: -55px;
+      
+      &:hover {
+        background-position: -49px -49px;
+      }
+    }
+  }
 }
