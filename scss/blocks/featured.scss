@@ -43,7 +43,7 @@
       }
     }
 
-    .feature__brand {
+    .featured__brand {
       color: $brand-color;
     }
 
@@ -79,7 +79,6 @@
       top: calc(50% - 49px);
       cursor: pointer;
       transform: translateY(-50%);
-      outline: none;
     }
     button.owl-prev {
       &:hover {

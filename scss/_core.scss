@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /**
- * Основные стили
+ * Base styles
  **/
 
 body {
@@ -17,6 +17,23 @@ body {
   @include min-max(320px, 1200px, 15px);
 }
 
-p {
+p,
+h1,
+h2,
+h3 {
   color: $black;
+}
+
+:focus-visible {
+  outline: 2px solid $black;
+  outline-offset: 2px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
 }

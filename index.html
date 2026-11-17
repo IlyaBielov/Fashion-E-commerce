@@ -3,24 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Fashion — Online Clothing Store</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap">
   <link rel="stylesheet" href="css/owl.carousel.css">
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/owl.carousel.js"></script>
-  <script src="js/script.js"></script>
-  <title>Fashion</title>
 </head>
 <body>
   <div class="container">
     <header class="header">
       <div class="header__wrap wrap">
-        <div class="header__left logo">
+        <h1 class="header__left logo">
           <a href="#">
-            <img src="img/logo.png" alt="logo">
+            <img src="img/logo.png" alt="Fashion" width="139" height="35">
           </a>
-        </div>
-        <div class="header__menu menu">
+        </h1>
+        <nav class="header__menu menu" aria-label="Main">
           <ul>
             <li>
               <a href="#">Home</a>
@@ -38,20 +37,21 @@
               <a href="#">Find stores</a>
             </li>
           </ul>
-        </div>
+        </nav>
         <div class="header__right icons">
           <div class="icons__cart">
             <a href="#">
-              <img src="img/cart.png" alt="cart">
+              <img src="img/cart.png" alt="Cart" width="15" height="16">
             </a>
           </div>
           <div class="icons__search">
-            <form action="#" method="POST">
-              <img class="icons__img" src="img/search.png" alt="cart">
+            <form action="#" method="get" role="search">
+              <img class="icons__img" src="img/search.png" alt="" width="16" height="15">
               <button type="submit">
-                <img src="img/search.png" alt="search">
+                <img src="img/search.png" alt="Search" width="16" height="15">
               </button>
-              <input type="text" name="search" placeholder="Seach...">
+              <label class="visually-hidden" for="search">Search the store</label>
+              <input type="search" id="search" name="q" placeholder="Search...">
             </form>
           </div>
         </div>
@@ -61,20 +61,20 @@
       <div class="owl-carousel owl-theme">
         <div class="slider__item">
           <div class="slider__img">
-            <img src="img/slide.png" alt="slide">
+            <img src="img/slide.webp" alt="Model from the summer collection" width="784" height="1040">
           </div>
           <div class="slider__info">
             <p class="slider__title">Summer Collection</p>
             <p class="slider__type">01 <span>men's wear</span></p>
             <div class="slider__icons">
-              <a href="#">
-                <img src="img/slider-icon.png" alt="icon">
+              <a href="#" aria-label="Next">
+                <img src="img/slider-icon.png" alt="">
               </a>
-              <a href="#">
-                <img src="img/slider-icon2.png" alt="icon2">
+              <a href="#" aria-label="Add to wishlist">
+                <img src="img/slider-icon2.png" alt="">
               </a>
-              <a href="#">
-                <img src="img/slider-icon3.png" alt="icon3">
+              <a href="#" aria-label="Share">
+                <img src="img/slider-icon3.png" alt="">
               </a>
             </div>
             <p>
@@ -85,7 +85,7 @@
         </div>
         <div class="slider__item">
             <div class="slider__img">
-              <img src="img/slide2.png" alt="slide">
+              <img src="img/slide2.webp" alt="Model from the summer collection" width="784" height="1040">
             </div>
             <div class="slider__info">
               <p class="slider__title">Summer Collection</p>
@@ -94,11 +94,11 @@
                 <a href="#">
                   <img src="img/slider-icon.png" alt="icon">
                 </a>
-                <a href="#">
-                  <img src="img/slider-icon2.png" alt="icon2">
+                <a href="#" aria-label="Add to wishlist">
+                  <img src="img/slider-icon2.png" alt="">
                 </a>
-                <a href="#">
-                  <img src="img/slider-icon3.png" alt="icon3">
+                <a href="#" aria-label="Share">
+                  <img src="img/slider-icon3.png" alt="">
                 </a>
               </div>
               <p>
@@ -109,7 +109,7 @@
         </div>
         <div class="slider__item">
             <div class="slider__img">
-              <img src="img/slide3.png" alt="slide">
+              <img src="img/slide3.webp" alt="Model from the summer collection" width="784" height="1040">
             </div>
             <div class="slider__info">
               <p class="slider__title">Summer Collection</p>
@@ -118,11 +118,11 @@
                 <a href="#">
                   <img src="img/slider-icon.png" alt="icon">
                 </a>
-                <a href="#">
-                  <img src="img/slider-icon2.png" alt="icon2">
+                <a href="#" aria-label="Add to wishlist">
+                  <img src="img/slider-icon2.png" alt="">
                 </a>
-                <a href="#">
-                  <img src="img/slider-icon3.png" alt="icon3">
+                <a href="#" aria-label="Share">
+                  <img src="img/slider-icon3.png" alt="">
                 </a>
               </div>
               <p>
@@ -134,7 +134,7 @@
       </div>
     </div>
     <main class="wrap content">
-      <div class="categories">
+      <nav class="categories" aria-label="Categories">
         <ul>
           <li>
             <a href="#">All</a>
@@ -143,7 +143,7 @@
             <a href="#">spring-summer</a>
           </li>
           <li>
-            <a href="#">sweatshirt </a>
+            <a href="#">sweatshirt</a>
           </li>
           <li>
             <a href="#">sneakers</a>
@@ -155,22 +155,22 @@
             <a href="#">outdoor</a>
           </li>
         </ul>
-      </div>
+      </nav>
       <div class="offers">
         <div class="offers__left">
           <div class="offers__element">
-            <img src="img/offer1.jpg" alt="offer1">
+            <img src="img/offer1.jpg" alt="White sneakers">
             <div class="offers__info">
-              <p class="offers__two-get">BUY 2 GET<br>UP 50% OFF</p>
+              <p class="offers__two-get">BUY 2 GET<br>UP TO 50% OFF</p>
             </div>
           </div>
           <div class="offers__element">
-            <img src="img/offer2.jpg" alt="offer2">
+            <img src="img/offer2.jpg" alt="Woman with a leather handbag">
           </div>
         </div>
         <div class="offers__center">
           <div class="offers__element">
-            <img src="img/offer3.jpg" alt="offer3">
+            <img src="img/offer3.jpg" alt="Woman in a white shirt">
             <div class="offers__info">
               <p class="offers__category">Winter Jacket</p>
               <p class="offers__name">VINTAGE LOOK<br>FOR WOMEN</p>
@@ -181,7 +181,7 @@
         </div>
         <div class="offers__right">
           <div class="offers__element">
-            <img src="img/offer4.jpg" alt="offer4">
+            <img src="img/offer4.jpg" alt="Man in a black hooded jacket">
             <div class="offers__info">
               <p class="offers__category">Winter Jacket</p>
               <p class="offers__name">FASHION<br>FOR MEN</p>
@@ -189,7 +189,7 @@
             </div>
           </div>
           <div class="offers__element offers__element--glasses">
-            <img src="img/offer5.jpg" alt="offer5">
+            <img src="img/offer5.jpg" alt="Sunglasses">
             <div class="offers__info">
               <p class="offers__category">40% off on sunglasses</p>
             </div>
@@ -199,31 +199,31 @@
       </div>
       <div class="banner">
         <div class="banner__information">
-          <p class="banner__title">We offer brand new styles</p>
-          <p>sing up now and get 50% off</p>
+          <h2 class="banner__title">We offer brand new styles</h2>
+          <p>sign up now and get 50% off</p>
           <a href="#">see full collection</a>
         </div>
       </div>
       <div class="products">
-        <p class="products__title">Produts types</p>
+        <h2 class="products__title">Product types</h2>
         <p>up to 30% discount</p>
         <div class="products__block">
           <div class="products__element">
-            <img src="img/product1.jpg" alt="product1">
+            <img src="img/product1.jpg" alt="Man in a grey T-shirt">
             <a href="#">Shop men</a>
           </div>
           <div class="products__element">
-            <img src="img/product2.jpg" alt="product2">
+            <img src="img/product2.jpg" alt="Woman in a floral jacket">
             <a href="#">Shop women</a>
           </div>
           <div class="products__element">
-            <img src="img/product3.jpg" alt="product3">
+            <img src="img/product3.jpg" alt="Two children in casual clothes">
             <a href="#">Shop kids</a>
           </div>
         </div>
       </div>
       <div class="featured">
-        <p class="featured__title">Featured products</p>
+        <h2 class="featured__title">Featured products</h2>
         <div class="categories">
           <ul>
             <li>
@@ -233,7 +233,7 @@
               <a href="#">spring-summer</a>
             </li>
             <li>
-              <a href="#">sweatshirt </a>
+              <a href="#">sweatshirt</a>
             </li>
             <li>
               <a href="#">sneakers</a>
@@ -248,32 +248,32 @@
         </div>
         <div class="featured__block carousel owl-carousel owl-theme">
           <div class="featured__element">
-            <img src="img/featured1.jpg" alt="featured1">
-            <p><a href="#">Ted Barker Womens Light</a></p> 
+            <img src="img/featured1.jpg" alt="Man in a striped polo shirt">
+            <p><a href="#">Ted Baker Women’s Light</a></p> 
             <p class="featured__brand">Gucci</p>
             <p class="featured__price"><span>$70.00</span> $120.00</p>
           </div>
           <div class="featured__element">
-            <img src="img/featured2.jpg" alt="featured2">
-            <p><a href="#">Ted Barker Womens Light</a></p> 
+            <img src="img/featured2.jpg" alt="Woman in a light shirt and sunglasses">
+            <p><a href="#">Ted Baker Women’s Light</a></p> 
             <p class="featured__brand">Gucci</p>
             <p class="featured__price"><span>$70.00</span> $120.00</p>
           </div>
           <div class="featured__element">
-            <img src="img/featured3.jpg" alt="featured3">
-            <p><a href="#">Ted Barker Womens Light</a></p>
+            <img src="img/featured3.jpg" alt="Woman in a white off-shoulder top">
+            <p><a href="#">Ted Baker Women’s Light</a></p>
             <p class="featured__brand">Gucci</p>
             <p class="featured__price"><span>$70.00</span> $120.00</p>
           </div>
           <div class="featured__element">
-            <img src="img/featured4.jpg" alt="featured4">
-            <p><a href="#">Ted Barker Womens Light</a></p>
+            <img src="img/featured4.jpg" alt="Woman in a black top and wide trousers">
+            <p><a href="#">Ted Baker Women’s Light</a></p>
             <p class="featured__brand">Gucci</p>
             <p class="featured__price"><span>$70.00</span> $120.00</p>
           </div>
           <div class="featured__element">
-            <img src="img/featured4.jpg" alt="featured4">
-            <p><a href="#">Ted Barker Womens Light</a></p>
+            <img src="img/featured4.jpg" alt="Woman in a black top and wide trousers">
+            <p><a href="#">Ted Baker Women’s Light</a></p>
             <p class="featured__brand">Gucci</p>
             <p class="featured__price"><span>$70.00</span> $120.00</p>
           </div>
@@ -282,47 +282,47 @@
       </div>
       <div class="banner banner--left">
         <div class="banner__information">
-          <p class="banner__title">Subscribe to our newsletter</p>
-          <p>Sing up now and get 75% off</p>
-          <a href="#">Sing up now</a>
+          <h2 class="banner__title">Subscribe to our newsletter</h2>
+          <p>Sign up now and get 75% off</p>
+          <a href="#">Sign up now</a>
         </div>
       </div>
       <div class="blog">
-        <p class="blog__title">Our blogs & news</p>
+        <h2 class="blog__title">Our blog &amp; news</h2>
         <div class="blog__block">
           <div class="blog__element">
-            <img src="img/blog.jpg" alt="blog">
+            <img src="img/blog.jpg" alt="Woman in black walking in the city">
             <div class="blog__info">
-              <p class="blog__topic">
+              <h3 class="blog__topic">
                 <a href="#">The 15 Secrets About Fashion People</a>
-                <p class="blog__date">January 12, 2020 by admin</p>
-              </p>
+              </h3>
+              <p class="blog__date">November 20, 2018 by admin</p>
             </div>
           </div>
           <div class="blog__element">
-              <img src="img/blog2.jpg" alt="blog2">
+              <img src="img/blog2.jpg" alt="Couple with a bicycle in the city">
               <div class="blog__info">
-                <p class="blog__topic">
-                  <a href="#">The 15 Secrets About Fashion People</a>
-                </p>
-                <p class="blog__date">January 12, 2020 by admin</p>
+                <h3 class="blog__topic">
+                  <a href="#">How to Build a Capsule Wardrobe</a>
+                </h3>
+                <p class="blog__date">November 18, 2018 by admin</p>
               </div>
             </div>
         </div>
       </div>
     </main>
-    <div class="links">
+    <nav class="links" aria-label="Footer">
       <div class="links__wrap wrap">
         <div class="links__element">
-          <p class="links__title">Information</p>
+          <h2 class="links__title">Information</h2>
           <p><a href="#">The brand</a></p>
           <p><a href="#">Local stores</a></p>
           <p><a href="#">Customer service</a></p>
-          <p><a href="#">Privacy & cookies</a></p>
+          <p><a href="#">Privacy &amp; cookies</a></p>
           <p><a href="#">Site map</a></p>
         </div>
         <div class="links__element">
-          <p class="links__title">My profile</p>
+          <h2 class="links__title">My profile</h2>
           <p><a href="#">Getting Started</a></p>
           <p><a href="#">FAQs</a></p>
           <p><a href="#">Buying Guide</a></p>
@@ -330,15 +330,15 @@
           <p><a href="#">Affiliate Program</a></p>
         </div>
         <div class="links__element">
-          <p class="links__title">Your account</p>
-          <p><a href="#">Shipping & returns</a></p>
+          <h2 class="links__title">Your account</h2>
+          <p><a href="#">Shipping &amp; returns</a></p>
           <p><a href="#">Secure shopping</a></p>
           <p><a href="#">Testimonials</a></p>
           <p><a href="#">Award winning</a></p>
           <p><a href="#">Ethical trading</a></p>
         </div>
         <div class="links__element">
-          <p class="links__title">Lookbook</p>
+          <h2 class="links__title">Lookbook</h2>
           <p><a href="#">Getting Started</a></p>
           <p><a href="#">FAQs</a></p>
           <p><a href="#">Buying Guide</a></p>
@@ -346,20 +346,25 @@
           <p><a href="#">Affiliate Program</a></p>
         </div>
         <div class="links__element links__element--contacts">
-          <p class="links__title">Contact details</p>
-          <p><span>Telephone:</span> 0123-456-789</p>
-          <p><span>Email:</span> free@psdfreebies.com</p>
+          <h2 class="links__title">Contact details</h2>
+          <p><span>Telephone:</span> <a href="tel:0123456789">0123-456-789</a></p>
+          <p><span>Email:</span> <a href="mailto:hello@example.com">hello@example.com</a></p>
           <p><span>Head Office:</span>  245 Yellow House,<br>
             Main Street, London. 456789</p>
         </div>
       </div>
-    </div>
+    </nav>
     <footer class="footer">
       <div class="wrap">
-        <p>&copy; Copyright e-commerce  1.0. 2022 Designed by Psdfreebies.com</p>
-        <img src="img/logo.png" alt="logo">
+        <p>&copy; 2018 Ilya Bielov. Design by <a href="https://psdfreebies.com/" target="_blank" rel="noopener noreferrer">Psdfreebies.com</a></p>
+        <img src="img/logo.png" alt="Fashion" width="139" height="35">
       </div>
     </footer>
   </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha384-1H217gwSVyLSIfaLxHbE7dRb3v4mYCKbpQvzx0cegeju1MVsGrX5xXxAvs/HgeFs" crossorigin="anonymous"></script>
+  <script src="js/owl.carousel.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>

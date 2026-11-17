@@ -152,18 +152,22 @@
     .offers__left {
       flex-basis: 100%;
       display: block;
+      min-width: 0;
 
       .offers__element {
         width: 277px;
+        max-width: 100%;
         margin: 20px auto;
       }
     }
     .offers__center {
       flex-basis: 100%;
       display: block;
+      min-width: 0;
 
       .offers__element {
         width: 470px;
+        max-width: 100%;
         margin: 0px auto;
       }
     }
